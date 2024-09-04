@@ -4,7 +4,7 @@ a Python script to pull names and emails from an excel sheet and send an email t
 ```bash
 git clone https://github.com/M3shour/Uchu-ni.git
 cd Uchu-ni
-pip3 -m requirements.txt
+pip3 install -r requirements.txt
 ```
 # Usage 
 ```bash
