@@ -28,3 +28,5 @@ usage: Email_sender.py [-h] --sender_email SENDER_EMAIL --sender_password SENDER
 10. ***--attachment_path:*** path to attachment to send with the emails 
 11. ***--append-attachment:*** choose if you want to append the attachment to the imap server or not(useful for large attachments)
 12. ***--email-template:*** path to HTML file that contains the structure and content of your emails required
+
+***Made by M3shour***
