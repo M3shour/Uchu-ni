@@ -29,4 +29,10 @@ usage: Email_sender.py [-h] --sender_email SENDER_EMAIL --sender_password SENDER
 11. ***--append-attachment:*** choose if you want to append the attachment to the imap server or not(useful for large attachments)
 12. ***--email-template:*** path to HTML file that contains the structure and content of your emails required
 
+# Example usage
+```bash
+python3 Email_sender.py --sender_email "m3shour@example.com" --sender_password "Uchu-ni means to the world!" --subject "Hello World" --excel_file_path "Maillist.xlsx" --sheet_name "Sheet1" --email-column "Emails" --name-column "Names" --imap-server "imaps.example.com" --smtp-server "smtp.example.com" --attachment_path "Cute_cat.pdf" --append-attachment True --email-template "email_template.html"
+```
+
+
 ***Made by M3shour***
