@@ -1,6 +1,28 @@
 # Uchu-ni
 A Python script to pull names and emails from an excel sheet and send an email to every email in the list with a customized message that uses their name.
 
+## Available Interfaces
+
+### 1. Text User Interface (TUI) ⭐ New!
+For interactive use with a friendly interface. Simply run:
+```bash
+python3 email_tui.py
+```
+
+The TUI provides:
+- 🎨 Beautiful, colorful interface
+- 📋 Step-by-step configuration wizard
+- 👀 Live preview of recipients
+- ✅ Interactive progress tracking
+- 🔧 Preset server configurations (Gmail, Outlook, Yahoo)
+- 📊 Excel file browser with column selection
+- 🎯 Built-in dry run mode
+- 📝 Template preview
+- ⚙️ Advanced configuration options
+
+### 2. Command Line Interface (CLI)
+For automation and scripting use cases. See CLI Usage section below.
+
 ## Enhanced Features
 This enhanced version includes robustness improvements and new features:
 - **Email validation** with regex pattern checking
@@ -13,6 +35,7 @@ This enhanced version includes robustness improvements and new features:
 - **File validation** before processing
 - **Configurable ports** and settings
 - **Progress tracking** with success/failure counts
+- **Interactive TUI** for easy configuration
 
 # Installation
 ```bash
@@ -63,7 +86,19 @@ usage: Email_sender.py [-h] [--sender_email SENDER_EMAIL]
 
 # Examples
 
-## Basic Usage
+## TUI Usage (Recommended for most users)
+```bash
+python3 email_tui.py
+```
+Follow the interactive wizard to:
+1. Enter your email credentials (or use environment variables)
+2. Choose server preset (Gmail, Outlook, Yahoo) or enter custom
+3. Select Excel file and configure columns
+4. Set up email content and attachments
+5. Configure advanced options (rate limiting, ports, etc.)
+6. Preview recipients and send with dry-run option
+
+## CLI Usage
 ```bash
 python3 Email_sender.py --sender_email "user@example.com" --sender_password "password" --subject "Hello World" --excel_file_path "Maillist.xlsx" --sheet_name "Sheet1" --email-column "Emails" --name-column "Names" --imap-server "imaps.example.com" --smtp-server "smtp.example.com" --email-template "email_template.html"
 ```
